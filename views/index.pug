@@ -1,0 +1,93 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Trivia
+        link(rel="stylesheet", href="/trivia.css")
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css')
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js')
+        script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js')
+
+
+
+    body
+        
+        div.jumbotron Trivia Project
+        
+        div#demo.carousel.slide(data-ride='carousel', data-interval="false")
+            div.carousel-inner
+                div.carousel-item.active
+                    .update
+                        form(action='/triviaUpdate', method='post')
+                            input.id(type='text',name='id' readonly)
+                            input(type="text", name='question',placeholder='Update Question')
+                            input(type="text", name='hint',placeholder='Update Hint')
+                            input(type="text", name='answer',placeholder='Update Answer')
+                            button.reset Update
+                    img(id='image' src='http://www.hssc.us/wp-content/uploads/2017/06/Trivia.png', width='1100', height='300')
+                    .answer
+                    div.carousel-caption
+                        div.statement 
+                        h3.questions  
+                        button.clue Need a Hint?? Click Here
+                        button.response Answer
+                            
+        
+                div.carousel-item
+                    .update
+                        form(action='/triviaUpdate', method='post')
+                            input.id(type='text',name='id' readonly)
+                            input(type="text", name='question',placeholder='Update Question')
+                            input(type="text", name='hint',placeholder='Update Hint')
+                            input(type="text", name='answer',placeholder='Update Answer')
+                            button.reset Update
+                        
+                    img(src='')
+                    .answer
+                    div.carousel-caption
+                        div.statement
+                        h3.questions
+                        button.clue Need a Hint??
+                        button.response Answer
+                
+                div.carousel-item
+                    .update
+                        form(action='/triviaUpdate', method='post')
+                            input.id(type='text',name='id' readonly)
+                            input(type="text", name='question',placeholder='Update Question')
+                            input(type="text", name='hint',placeholder='Update Hint')
+                            input(type="text", name='answer',placeholder='Update Answer')
+                            button.reset Update
+                    img(src='')
+                    .answer
+                    div.carousel-caption
+                        div.statement
+                        h3.questions
+                        button.clue Need a Hint??
+                        button.response Answer  
+                    
+                        
+            a.carousel-control-prev(href='#demo', data-slide='prev')
+                span.carousel-control-prev-icon PREV. CARD
+            a.carousel-control-next(href='#demo', data-slide='next')
+                span.carousel-control-next-icon NEXT CARD
+    .forms
+        button.newcard Add a New Trivia Card                
+        form.form(action="/trivia", method="post")
+            input(type="text",name="question",placeholder="Enter a new question")
+            input(type="text",name="hint",placeholder='Provide a hint')
+            input(type="text",name='answer', placeholder='Enter the answer')
+            button(type="submit") Submit New Question
+    
+        script(type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js")
+        script(type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
+        script(src="trivia.js", type="text/javascript")
+        
+				
+
+
+    
+    
+

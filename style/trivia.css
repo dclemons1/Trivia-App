@@ -1,0 +1,94 @@
+
+.jumbotron{
+    text-align: center;
+    font-size: 50px;
+    background-image: url("");
+    background-size: contain;
+}
+.questions{
+    text-align: center;
+    font-size: 25px;
+}
+
+.carousel-inner img {
+    width: 85%;
+    height: 70%;
+    display: block;
+    margin-top: -1%;
+    margin: auto
+}
+.carousel-caption {
+    position: relative;
+    color: black
+}
+
+.statement{
+    color: black;
+    margin: auto;
+    font-size: 25px;
+    font-weight: bold
+}
+
+.clue{
+    margin: auto;
+    display: block;
+    background-color: transparent;
+    color: red;
+    border: none;
+    font-size: 20px;
+    text-shadow: 1px 1px black
+
+
+}
+.clue:hover{
+    background: red;
+    color: white
+}
+.response{
+    margin: auto;
+    display: block;
+    border: 2px solid red;
+    background-color: transparent
+}
+.answer{
+    text-align: center;
+    font-size: 30px;
+    display: none;
+    font-weight: bold
+}
+.questions{
+    display:none;
+    color:black;
+    font-size: 30px
+}
+
+#demo.carousel.slide{
+    width: 60%;
+    margin: auto;
+    display: block;
+    border: solid goldenrod 10px
+}
+#demo.carousel.slide:target{
+   background: red
+}
+.carousel-control-prev-icon{
+    color: red;
+    font-size: 20px;
+    text-shadow: 1px 1px black
+}
+.carousel-control-next-icon{
+    color: red;
+    font-size: 20px;
+    text-shadow: 1px 1px black
+}
+
+.forms{
+    margin-left: 23%
+}
+.form{
+    display: none
+}
+.newcard{
+    margin-left: 27%
+}
+
